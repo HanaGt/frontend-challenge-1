@@ -73,6 +73,6 @@ A modern, feature-rich TODO application built with **React**, **RecoilJS**, **Ta
 ### 📥 Installation
 
 ```bash
-git clone https://github.com/your-username/todo-app.git
+git clone https://github.com/HanaGt/frontend-challenge-1.git
 cd todo-app
 pnpm install

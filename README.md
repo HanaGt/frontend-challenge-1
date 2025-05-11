@@ -1,101 +1,78 @@
-# TodoApp
+# 📝 Todo App
 
-<a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
+A modern, feature-rich TODO application built with **React**, **RecoilJS**, **Tailwind CSS**, and **TypeScript**. This app is designed to be **responsive**, **accessible**, and **user-friendly**, with a focus on clean code and reusable components.
 
-✨ Your new, shiny [Nx workspace](https://nx.dev) is ready ✨.
+## 🚀 Features
 
-[Learn more about this workspace setup and its capabilities](https://nx.dev/nx-api/next?utm_source=nx_project&amp;utm_medium=readme&amp;utm_campaign=nx_projects) or run `npx nx graph` to visually explore what was created. Now, let's get you up to speed!
+### ✅ Core Functionality
 
-## Run tasks
+- **Add Todos**  
+  Add tasks using a text input with a submit button or by pressing `Enter`.
 
-To run the dev server for your app, use:
+- **Display Todo List**  
+  View a list of tasks with clean styling and an empty state message when no tasks are available.
 
-```sh
-npx nx dev todo-app
-```
+- **Edit Todo**  
+  Double-click or use an edit icon to modify a task. Save or cancel edits.
 
-To create a production bundle:
+- **Delete Todo**  
+  Remove tasks using a delete button (with optional confirmation prompt).
 
-```sh
-npx nx build todo-app
-```
+- **Mark as Completed**  
+  Use checkboxes or radio buttons to mark tasks as done. Completed tasks are styled with a strikethrough and faded color.
 
-To see all available targets to run for a project, run:
+- **Filter Todos**  
+  Filter tasks by `All`, `Active`, or `Completed` using tabs or a dropdown.
 
-```sh
-npx nx show project todo-app
-```
+- **Search Todos**  
+  Live search bar to filter tasks by text input.
 
-These targets are either [inferred automatically](https://nx.dev/concepts/inferred-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) or defined in the `project.json` or `package.json` files.
+- **Reorder Todos**  
+  Drag-and-drop functionality using [`@dnd-kit/core`](https://github.com/clauderic/dnd-kit) or [`@hello-pangea/dnd`](https://github.com/hello-pangea/dnd).
 
-[More about running tasks in the docs &raquo;](https://nx.dev/features/run-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+- **Local Storage Support**  
+  Automatically persists todos across sessions.
 
-## Add new projects
+- **Responsive Design**  
+  Optimized for mobile, tablet, and desktop.
 
-While you could add new projects to your workspace manually, you might want to leverage [Nx plugins](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) and their [code generation](https://nx.dev/features/generate-code?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) feature.
+## 🎨 Smooth UX
 
-Use the plugin's generator to create new projects.
+- **Animations**  
+  Elegant transitions and motion effects via **Framer Motion**.
 
-To generate a new application, use:
+- **Undo Delete**  
+  Easily restore recently deleted todos.
 
-```sh
-npx nx g @nx/next:app demo
-```
+- **Loading States**  
+  Skeleton loaders provide a better visual experience while loading.
 
-To generate a new library, use:
+## ♿ Accessible UI
 
-```sh
-npx nx g @nx/react:lib mylib
-```
+- Keyboard navigable  
+- Proper ARIA roles and labels  
+- High contrast for improved readability
 
-You can use `npx nx list` to get a list of installed plugins. Then, run `npx nx list <plugin-name>` to learn about more specific capabilities of a particular plugin. Alternatively, [install Nx Console](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) to browse plugins and generators in your IDE.
+## 🧰 Tech Stack
 
-[Learn more about Nx plugins &raquo;](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) | [Browse the plugin registry &raquo;](https://nx.dev/plugin-registry?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+- ⚛️ **React** – Component-based UI library  
+- 🎯 **RecoilJS** – State management for React  
+- 🎨 **Tailwind CSS** – Utility-first CSS framework  
+- ⛑ **TypeScript** – Strongly typed JavaScript  
+- 🎞 **Framer Motion** – For animations  
+- 🧩 **@dnd-kit/core** – Drag-and-drop support  
+- 💾 **Local Storage** – Data persistence
 
-## Set up CI!
+## ⚙️ Getting Started
 
-### Step 1
+### ✅ Prerequisites
 
-To connect to Nx Cloud, run the following command:
+- **Node.js** v18+
+- **pnpm** (preferred package manager)
 
-```sh
-npx nx connect
-```
+### 📥 Installation
 
-Connecting to Nx Cloud ensures a [fast and scalable CI](https://nx.dev/ci/intro/why-nx-cloud?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) pipeline. It includes features such as:
-
-- [Remote caching](https://nx.dev/ci/features/remote-cache?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Task distribution across multiple machines](https://nx.dev/ci/features/distribute-task-execution?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Automated e2e test splitting](https://nx.dev/ci/features/split-e2e-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Task flakiness detection and rerunning](https://nx.dev/ci/features/flaky-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-### Step 2
-
-Use the following command to configure a CI workflow for your workspace:
-
-```sh
-npx nx g ci-workflow
-```
-
-[Learn more about Nx on CI](https://nx.dev/ci/intro/ci-with-nx#ready-get-started-with-your-provider?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-## Install Nx Console
-
-Nx Console is an editor extension that enriches your developer experience. It lets you run tasks, generate code, and improves code autocompletion in your IDE. It is available for VSCode and IntelliJ.
-
-[Install Nx Console &raquo;](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-## Useful links
-
-Learn more:
-
-- [Learn more about this workspace setup](https://nx.dev/nx-api/next?utm_source=nx_project&amp;utm_medium=readme&amp;utm_campaign=nx_projects)
-- [Learn about Nx on CI](https://nx.dev/ci/intro/ci-with-nx?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Releasing Packages with Nx release](https://nx.dev/features/manage-releases?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [What are Nx plugins?](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-And join the Nx community:
-- [Discord](https://go.nx.dev/community)
-- [Follow us on X](https://twitter.com/nxdevtools) or [LinkedIn](https://www.linkedin.com/company/nrwl)
-- [Our Youtube channel](https://www.youtube.com/@nxdevtools)
-- [Our blog](https://nx.dev/blog?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+```bash
+git clone https://github.com/your-username/todo-app.git
+cd todo-app
+pnpm install

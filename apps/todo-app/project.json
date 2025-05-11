@@ -1,0 +1,32 @@
+{
+    "name": "todo-app",
+    "$schema": "../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "apps/todo-app",
+    "projectType": "application",
+    "targets": {
+        "build": {
+            "executor": "@nx/next:build",
+            "outputs": [
+                "{workspaceRoot}/apps/todo-app/.next"
+            ],
+            "options": {
+                "root": "apps/todo-app",
+                "outputPath": "{workspaceRoot}/apps/todo-app/.next"
+            }
+        },
+        "serve": {
+            "executor": "@nx/next:server",
+            "options": {
+                "buildTarget": "todo-app:build",
+                "dev": true
+            }
+        },
+        "start": {
+            "executor": "@nx/next:server",
+            "options": {
+                "buildTarget": "todo-app:build"
+            }
+        }
+    },
+    "tags": []
+}

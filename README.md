@@ -27,8 +27,6 @@ A modern, feature-rich TODO application built with **React**, **RecoilJS**, **Ta
 - **Search Todos**  
   Live search bar to filter tasks by text input.
 
-- **Reorder Todos**  
-  Drag-and-drop functionality using [`@dnd-kit/core`](https://github.com/clauderic/dnd-kit) or [`@hello-pangea/dnd`](https://github.com/hello-pangea/dnd).
 
 - **Local Storage Support**  
   Automatically persists todos across sessions.

@@ -80,15 +80,15 @@ pnpm install
 ### Screenshots
 
 #### 🖼️ Home Page
-![Home Page](public/screenshots/screenshot1.png)
+![Home Page](apps/todo-app/public/screenshots/screenshot1.png)
 
 #### 🖼️ HOme with Filter
-![Home with Filter](public/screenshots/screenshot2.png)
+![Home with Filter](apps/todo-app/public/screenshots/screenshot2.png)
 
 #### 🖼️ Statistics
-![Statistics](public/screenshots/screenshot3.png)![Statistics](public/screenshots/screenshot4.png)
+![Statistics](apps/todo-app/public/screenshots/screenshot3.png)![Statistics](apps/todo-app/public/screenshots/screenshot4.png)
 
 #### 🖼️ Dark Mode
-![Dark Mode](public/screenshots/screenshot5.png)
+![Dark Mode](apps/todo-app/public/screenshots/screenshot5.png)
 
 

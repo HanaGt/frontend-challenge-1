@@ -77,6 +77,18 @@ git clone https://github.com/HanaGt/frontend-challenge-1.git
 cd todo-app
 pnpm install
 ```
-### ScreenShots
+### Screenshots
+
+#### 🖼️ Home Page
+![Home Page](public/screenshots/screenshot1.png)
+
+#### 🖼️ HOme with Filter
+![Home with Filter](public/screenshots/screenshot2.png)
+
+#### 🖼️ Statistics
+![Statistics](public/screenshots/screenshot3.png)![Statistics](public/screenshots/screenshot4.png)
+
+#### 🖼️ Dark Mode
+![Dark Mode](public/screenshots/screenshot5.png)
 
 
